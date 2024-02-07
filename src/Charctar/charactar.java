@@ -1,30 +1,29 @@
 package Charctar;
 
-abstract class creature {
+abstract class charactar {
 	
 	//ステータス
-	private String name = "冒険家";
+	private String name ;
 	private int level = 1;
 	private int hp;
 	private int mp;
-	private int str;
-	private int def;
-	private int agi;
-	private int dex;
-	
+	private int str; //ちから
+	private int def; //たいりょく
+	private int agi; //すばやさ
+	private int dex; //きようさ
 	
 	
 	//コンストラクタ
-	public creature() {}
+	public charactar() {}
 		
-	//先制判定
-	public abstract int judgePre();
-	//命中判定
-	public abstract int judgeHit();
-	//回避判定
-	public abstract int judgeAvoi();
-	//ダメージ算出
-	public abstract int damegeCalc();
+//	//先制判定
+//	public abstract int judgePre();
+//	//命中判定
+//	public abstract int judgeHit();
+//	//回避判定
+//	public abstract int judgeAvoi();
+//	//ダメージ算出
+//	public abstract int damegeCalc();
 	
 	
 	//名前のアクセサ
@@ -78,13 +77,11 @@ abstract class creature {
 		this.dex = dex;
 	}
 	
-	//回避のアクセサ
-	public abstract int getAvoi();
-	//先制力のアクセサ
-	public abstract int getPre();
-	//命中のアクセサ
-	public abstract int getHit();
-	//追加ダメージ
-	//public abstract int getAddDamege();
-	
+//	//回避のアクセサ
+//	public abstract int getAvoi();
+//	//先制力のアクセサ
+//	public abstract int getPre();
+//	//命中のアクセサ
+//	public abstract int getHit();
+//	
 }

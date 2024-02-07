@@ -4,7 +4,7 @@ import Item.Armor;
 import Item.Shield;
 import Item.Weapon;
 
-public abstract class Human extends creature {
+public abstract class Player extends charactar {
 
 //	Map<String, Integer> jobs = new LinkedHashMap<String, Integer>();
 	//職業
@@ -32,7 +32,7 @@ public abstract class Human extends creature {
 	private int exp;
 	
 	//コンストラクタ
-	public Human() {
+	public Player() {
 	}
 
 	//先制判定
