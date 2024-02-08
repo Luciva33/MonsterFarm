@@ -2,6 +2,19 @@ package Charctar;
 
 public class travellar extends Player{
 
+	@Override
+	public void attack() {
+		// TODO 自動生成されたメソッド・スタブ
+		
+	}
+
+	@Override
+	public void diffence() {
+		// TODO 自動生成されたメソッド・スタブ
+		
+	}
+
+	
 //	@Override
 //	public int judgePre() {
 //		// TODO 自動生成されたメソッド・スタブ

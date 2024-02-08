@@ -33,8 +33,45 @@ public abstract class Player extends charactar {
 	
 	//コンストラクタ
 	public Player() {
+		;
 	}
 
+	public  Player(String name) {
+		this.name = name; 
+	}
+	
+	public  Player(int hp, int mp) {
+		this.hp = hp;
+		this.mp = mp;
+	}
+	
+	public  Player(int hp, int mp, int level) {
+		this.hp = hp;
+		this.mp = mp;
+		this.level = level;
+	}
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
 	//先制判定
 	//public int judgePre() {
 	//	return ;

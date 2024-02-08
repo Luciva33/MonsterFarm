@@ -3,14 +3,14 @@ package Charctar;
 abstract class charactar {
 	
 	//ステータス
-	private String name ;
-	private int level = 1;
-	private int hp;
-	private int mp;
-	private int str; //ちから
-	private int def; //たいりょく
-	private int agi; //すばやさ
-	private int dex; //きようさ
+	protected String name ;
+	protected int level = 1;
+	protected int hp;
+	protected int mp;
+	protected int str; //ちから
+	protected int def; //たいりょく
+	protected int agi; //すばやさ
+	protected int dex; //きようさ
 	
 	
 	//コンストラクタ
@@ -24,6 +24,12 @@ abstract class charactar {
 //	public abstract int judgeAvoi();
 //	//ダメージ算出
 //	public abstract int damegeCalc();
+	
+	//抽象メソッド
+	
+	public abstract void attack();
+	public abstract void diffence();
+	//public abstract boolean run();
 	
 	
 	//名前のアクセサ
