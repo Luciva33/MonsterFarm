@@ -2,11 +2,16 @@ package Main;
 
 public class main {
 
-	public static void main(String[] args) {
+	public static void main(String[] args)  {
 		// TODO 自動生成されたメソッド・スタブ
 	
 		
-		Battle.BattleApp.battle();
+		try {
+			Battle.BattleApp.battle();
+		} catch (Exception e) {
+			// TODO 自動生成された catch ブロック
+			e.printStackTrace();
+		}
 		
 //		public class GameMain {
 //			public static void main(String[] args) {

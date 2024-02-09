@@ -1,4 +1,6 @@
-package Battle;
+package Charctar;
+
+
 
 public class CalcDamege {
 
@@ -16,5 +18,20 @@ public class CalcDamege {
 	
 	//dmg = (atk + def / 2 ) *(rand.nextInt(134)+54)/256
 
+	
+	//生存判定
+	
+	public static boolean isAlive(charactar c){
+					if(c.getHp() <=0){
+						c.setHp(0);
+						return false;
+					}
+					return true;
+	}
+	
+	
+	
+	
+	
 	
 }

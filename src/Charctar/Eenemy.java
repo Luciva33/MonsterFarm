@@ -6,7 +6,7 @@ public class Eenemy extends Monster {
 	private int level = 1;
 	private int hp  = 8;
 	private int mp  = 2;
-	private int str = 3;
+	private int str = 5;
 	private int def = 3;
 	private int agi = 5;
 	private int dex = 2; 
@@ -24,6 +24,7 @@ public class Eenemy extends Monster {
 		h.setHp(h.getHp() - damg);
 		System.out.println(this.name + "のこうげき！");
 		System.out.println(str + "のダメージ！");
+		CalcDamege.isAlive(h);
 	}
 	
 	
@@ -72,7 +73,20 @@ public class Eenemy extends Monster {
 		this.level = level;
 	}
 
+	public int getMoney() {
+		return money;
+	}
 
+	/**
+	 * @param level the level to set
+	 */
+	public int getExp() {
+		return Exp;
+	}
+
+	
+	
+	
 
 	@Override
 	public void attack() {
